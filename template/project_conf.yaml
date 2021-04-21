@@ -1,0 +1,41 @@
+# run_config为appium启动配置项
+# chromedriverExecutable为被测手机中的实现webview的浏览器版本
+
+# control_config为其他配置项，
+# no_run: 不运行的场景用例，可选范围型不允许，多个用分号隔开，下例不运行编号为：1、2、6、7、8、9、10
+# max_sleep_time: 最大等待时间，用于查找元素，超过报错
+# default_sleep_time: 默认每步等待时间
+# remote_host: appium服务地址
+# webview_context: 被测软件中的webview上下文
+
+# mail_config为发送邮件配置项
+# send_status：1|0: 发送|不发
+# 账号密码以及邮件服务器的获取，自行百度或联系作者
+
+coach_cat_今日校园:
+  run_config:
+    platformName: 'Android'
+    platformVersion: 10.0.0
+    deviceName: GLK_AL00
+    appPackage: com.wisedu.cpdaily.test
+    appActivity: com.wisorg.wisedu.home.ui.HomeActivity
+    chromedriverExecutable: 78.0.3904.exe
+    resetKeyboard: true
+    unicodeKeyboard: true
+    noReset: true
+    fullReset: false
+
+  control_config:
+    no_run:
+    max_sleep_time: 5
+    default_sleep_time: 0.5
+    remote_host: http://localhost:4723/wd/hub
+    webview_context: WEBVIEW_com.wisedu.cpdaily.test
+
+  mail_config:
+    send_status: 1
+    send_user: kunwu01@wisedu.com
+    password: mjsn3V2qAgLcGL8Y
+    mail_title: coach_cat_今日校园
+    accept_user: 01120152@wisedu.com
+    mail_server: smtp.exmail.qq.com

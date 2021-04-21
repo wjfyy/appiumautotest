@@ -1,0 +1,60 @@
+
+
+coach_cat_今日校园:
+  run_config:
+    platformName: 'Android'
+    platformVersion: 10.0.0
+    deviceName: GLK_AL00
+    appPackage: com.wisedu.cpdaily.test
+    appActivity: com.wisorg.wisedu.home.ui.HomeActivity
+    chromedriverExecutable: 78.0.3904.exe
+    resetKeyboard: true
+    unicodeKeyboard: true
+    noReset: true
+    fullReset: false
+
+  control_config:
+    no_run: 
+    max_sleep_time: 5
+    default_sleep_time: 0.5
+    remote_host: http://localhost:4723/wd/hub
+    webview_context: WEBVIEW_com.wisedu.cpdaily.test
+
+  mail_config:
+    send_status: 1
+    send_user: kunwu01@wisedu.com
+    password: mjsn3V2qAgLcGL8Y
+    mail_title: coach_cat_今日校园
+    accept_user: 01120152@wisedu.com
+    mail_server: smtp.exmail.qq.com
+
+
+coach_cat_微信:
+  run_config:
+    platformName: 'Android'
+    platformVersion: 10.0.0
+    deviceName: GLK_AL00
+    appPackage: com.tencent.mm
+    appActivity: .ui.LauncherUI
+    chromedriverExecutable: 77.0.3865.exe
+    chromeOptions:
+      androidProcess: com.tencent.mm:toolsmp
+    resetKeyboard: true
+    unicodeKeyboard: true
+    noReset: true
+    fullReset: false
+
+  control_config:
+    no_run:
+    max_sleep_time: 5
+    default_sleep_time: 0.5
+    remote_host: http://localhost:4723/wd/hub
+    webview_context: WEBVIEW_com.tencent.mm:toolsmp
+
+  mail_config:
+    send_status: 1
+    send_user: kunwu01@wisedu.com
+    password: mjsn3V2qAgLcGL8Y
+    mail_title: coach_cat_微信
+    accept_user: 01120152@wisedu.com
+    mail_server: smtp.exmail.qq.com
